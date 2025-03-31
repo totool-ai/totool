@@ -1,0 +1,7 @@
+packages:
+  - packages/*
+  - examples/*
+  - examples/ai-sdk/*
+onlyBuiltDependencies:
+  - esbuild
+linkWorkspacePackages: true

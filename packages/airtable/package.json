@@ -1,0 +1,40 @@
+{
+  "name": "@totool/airtable",
+  "version": "1.0.0",
+  "description": "Airtable tools for AI agents",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "vitest run --config vitest.e2e-tests.config.ts"
+  },
+  "keywords": [],
+  "author": "Ori Ben Aharon",
+  "license": "MIT",
+  "packageManager": "pnpm@10.7.0",
+  "dependencies": {
+    "airtable": "^0.12.2",
+    "debug": "^4.4.0",
+    "totool": "link:../totool",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@langchain/core": "^0.1.63",
+    "@langchain/langgraph": "^0.2.62",
+    "@langchain/langgraph-sdk": "^0.0.62",
+    "@langchain/openai": "^0.0.14",
+    "@types/debug": "^4.1.12",
+    "@types/node": "^20.11.24",
+    "@vitest/coverage-v8": "^1.3.1",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.3.19",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  }
+}
